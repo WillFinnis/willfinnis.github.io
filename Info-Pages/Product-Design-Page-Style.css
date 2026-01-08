@@ -1,0 +1,123 @@
+.rover-link,
+.pulse-pro-link,
+.hair-dryer-link,
+.bike-light-link,
+.speaker-link,
+.sketching-link {
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.rover-link:hover,
+.pulse-pro-link:hover,
+.hair-dryer-link:hover,
+.bike-light-link:hover,
+.speaker-link:hover,
+.sketching-link:hover {
+    color: #ffffff;
+    background-color: #111111;
+    padding: 16px 24px;
+}
+
+.rover-box {
+    background-image: url('Product-Design/Rover-Hero.png');
+}
+
+.pulse-pro-box {
+    background-image: url('Product-Design/BP-Monitor-Perspective-Renders.png');
+}
+
+.hair-dryer-box {
+    background-image: url('Product-Design/Hair-Dryer-Hero-Render.png');
+    background-position: center 50%;
+}
+
+.bike-light-box {
+    background-image: url('Product-Design/Bike-Light-Hero-Render.png');
+}
+
+.speaker-box {
+    background-image: url('Product-Design/Tower-Speaker-Render.png');
+}
+
+.sketching-box {
+    background-image: url('Product-Design/SDCA-Sketching-1.png');
+}
+
+.rover-form-sketches,
+.rover-mechanical-sketches,
+.rover-portability-considerations,
+.bp-sketches,
+.bp-digital-sketches,
+.bike-light-sketches,
+.hair-dryer,
+.speaker-sketches,
+.form-sketching {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.app,
+.hmi,
+.story-board,
+.rover-renders,
+.bp-renders,
+.bike-light-renders,
+.speaker-ar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.app .break,
+.hmi .break,
+.story-board .break,
+.rover-renders .break,
+.bp-renders .break,
+.bike-light-renders .break,
+.speaker-ar .break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.rover-form-sketches-image,
+.rover-mechanical-sketches-image,
+.rover-portability-considerations-image,
+.bp-sketches-image,
+.bp-digital-sketches-image,
+.bike-light-sketches-image,
+.speaker-sketches-image,
+.speaker-ar-image {
+    height: 400px;
+    width: auto;
+    border-radius: 25px;
+}
+
+.app-image,
+.hmi-image,
+.story-board-image,
+.rover-render-image,
+.bp-renders-image,
+.hair-dryer-image,
+.bike-light-renders-image,
+.speaker-render-image,
+.form-sketching-image {
+    height: 500px;
+    width: auto;
+    border-radius: 25px;
+}
+
+.hmi-video {
+    height: 500px;
+    width: auto;
+    border-radius: 25px;
+}

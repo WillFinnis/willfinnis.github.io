@@ -1,0 +1,82 @@
+.concept-testing-link,
+.printing-link,
+.foam-modelling-link {
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.concept-testing-link:hover,
+.printing-link:hover,
+.foam-modelling-link:hover {
+    color: #ffffff;
+    background-color: #111111;
+    padding: 16px 24px;
+}
+
+.concept-testing-box {
+    background-image: url('Prototyping/Rover-Prototype-Electronics.jpg');
+    background-position: center 50%;
+}
+
+.printing-box {
+    background-image: url('Prototyping/Digi-Fab-Combination-1.jpg');
+}
+
+.foam-modelling-box {
+    background-image: url('Prototyping/BP-Monitor-Foam-3.jpg');
+    background-position: center 70%;
+}
+
+.docking-tracker,
+.rover-prototype,
+.rover-portability,
+.rover-performance,
+.grip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.docking-tracker .break,
+.rover-prototype .break,
+.rover-portability .break,
+.rover-performance .break,
+.grip .break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.pulse-pro,
+.architecture,
+.product-mock-up {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.docking-tracker-image,
+.rover-prototype-image,
+.rover-performance-image,
+.rover-portability-image,
+.pulse-pro-image,
+.grip-image,
+.architecture-image,
+.product-mock-up-image {
+    height: 500px;
+    width: auto;
+    border-radius: 25px;
+}
+
+.rover-performance-video {
+    height: 500px;
+    width: auto;
+    border-radius: 25px;
+}

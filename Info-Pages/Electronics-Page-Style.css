@@ -1,0 +1,101 @@
+.arduino-link,
+.pcb-design-link,
+.soldering-link,
+.bluetooth-control-link {
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+.arduino-link:hover,
+.pcb-design-link:hover,
+.soldering-link:hover,
+.bluetooth-control-link:hover {
+    color: #ffffff;
+    background-color: #111111;
+    padding: 16px 24px;
+}
+
+.arduino-box {
+    background-image: url('Electronics/Arduino-MODBUS-TinkerCAD.png');
+}
+
+.pcb-design-box {
+    background-image: url('Electronics/Docking-Tracker-Altium-Circuit-Diagram.png');
+    background-position: center 30%;
+}
+
+.soldering-box {
+    background-image: url('Electronics/Docking-Tracker-Perf-Board-Top-Soldered.JPG');
+    background-position: center 60%;
+}
+
+.bluetooth-control-box {
+    background-image: url('Electronics/ESP32-Rover-Electronics-Testing.jpg');
+    background-position: center 70%;
+}
+
+.rfid-lcd,
+.canbus,
+.modbus,
+.motor-testing,
+.bluetooth-control,
+.pcb,
+.soldering,
+.tank {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rfid-lcd .break,
+.canbus .break,
+.modbus .break,
+.bluetooth-control .break,
+.pcb .break,
+.soldering .break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.rfid-image,
+.rfid-lcd-image,
+.canbus-image,
+.modbus-image,
+.bluetooth-image,
+.circuit-schematic-image,
+.pcb-image,
+.soldering-image,
+.tank-image {
+    height: 500px;
+    width: auto;
+    border-radius: 25px;
+}
+
+.rfid-lcd-video,
+.canbus-multiple-device-video,
+.canbus-master-slave-video,
+.bluetooth-testing-image,
+.bluetooth-video,
+.tank-video {
+    height: 500px;
+    width: auto;
+    border-radius: 25px;
+}
+
+.motor-control-image,
+.altium-image {
+    height: 400px;
+    width: auto;
+    border-radius: 25px;
+}
+
+.circuit-schematic {
+    height: 700px;
+    width: auto;
+    border-radius: 25px;
+}

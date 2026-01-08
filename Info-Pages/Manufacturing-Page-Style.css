@@ -1,0 +1,80 @@
+.printing-link,
+.assembly-link,
+.metal-fabrication-link,
+.wood-working-link {
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.printing-link:hover,
+.assembly-link:hover,
+.metal-fabrication-link:hover,
+.wood-working-link:hover {
+    color: #ffffff;
+    background-color: #111111;
+    padding: 16px 24px;
+}
+
+.printing-box {
+    background-image: url('Manufacturing/Digi-Fab-Iteration-Differences.jpg');
+    background-position: center 67%;
+}
+
+.assembly-box {
+    background-image: url('Manufacturing/Panda-Mould-Tool-Exploded.jpg');
+    background-position: center 60%;
+}
+
+.metal-fabrication-box {
+    background-image: url('Manufacturing/Metal-Sphere-Outdoors.jpg');
+    background-position: center 40%;
+}
+
+.wood-working-box {
+    background-image: url('Manufacturing/Plane-Clock-Front.jpg');
+    background-position: center 60%;
+}
+
+.printing,
+.metal-lathe,
+.milling-machine,
+.wood-working {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cnc-milling,
+.welding,
+.trebuchet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cnc-milling .break,
+.welding .break,
+.trebuchet .break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.printing-image,
+.metal-lathe-image,
+.milling-machine-image,
+.cnc-image,
+.welding-image,
+.trebuchet-image,
+.wood-working-image {
+    height: 500px;
+    width: auto;
+    border-radius: 25px;
+}

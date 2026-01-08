@@ -1,0 +1,115 @@
+.dfm-link,
+.simulations-link,
+.engineering-drawings-link,
+.rendering-link,
+.surface-modelling-link,
+.animations-link {
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.dfm-link:hover,
+.simulations-link:hover,
+.engineering-drawings-link:hover,
+.rendering-link:hover,
+.surface-modelling-link:hover,
+.animations-link:hover {
+    color: #ffffff;
+    background-color: #111111;
+    padding: 16px 24px;
+}
+
+.dfm-box {
+    background-image: url('CAD/Rover-Main-Body-Exploded-View.png');
+}
+
+.simulations-box {
+    background-image: url('CAD/CNC-Tool-Path-Simulations-5.jpg');
+}
+
+.engineering-drawings-box {
+    background-image: url('CAD/Magnet-Mould-Tool-Engineering-Drawing-1.png');
+}
+
+.rendering-box {
+    background-image: url('CAD/Rover-Range-View.png');
+}
+
+.surface-modelling-box {
+    background-image: url('CAD/Drill-Zebra-Stripes.png');
+}
+
+.animations-box {
+    background-image: url('CAD/Trebuchet-Render.png');
+    background-position: center 70%;
+}
+
+.rover-injection-mould-design,
+.internal-mechanics,
+.exploded-views,
+.rover-mechanical-latches,
+.trebuchet-firing {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cnc-tool-paths,
+.injection-mould-simulations,
+.fea-simulations,
+.mould-tool-engineer-drawings,
+.renders,
+.surface-modelling {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cnc-tool-paths .break,
+.injection-mould-simulations .break,
+.fea-simulations .break,
+.mould-tool-engineer-drawings .break,
+.renders .break,
+.surface-modelling .break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.mechanical-latch-video {
+    width: 32%;
+    border-radius: 25px;
+}
+
+.dfm-image,
+.internal-mechanics-image,
+.exploded-view-image,
+.engineer-drawings-image,
+.rover-render-image,
+.trebuchet-image,
+.surface-modelling-image {
+    height: 500px;
+    width: auto;
+    border-radius: 25px;
+}
+
+.cnc-image,
+.injection-moulding-image,
+.fea-image {
+    height: 300px;
+    width: auto;
+    border-radius: 25px;
+}
+
+.trebuchet-video {
+    height: 800px;
+    width: auto;
+    border-radius: 25px;
+}
