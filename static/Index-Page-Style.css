@@ -171,7 +171,7 @@ body {
 }
 
 .electronics-box {
-    background-image: url('Main-Page-Photos/Electronics.jpg');
+    background-image: url('Index-Page-Photos/Electronics.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -195,7 +195,7 @@ body {
 }
 
 .manufacturing-box {
-    background-image: url('Main-Page-Photos/Manufacturing.png');
+    background-image: url('Index-Page-Photos/Manufacturing.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -219,7 +219,7 @@ body {
 }
 
 .product-design-box {
-    background-image: url('Main-Page-Photos/Product-Design.png');
+    background-image: url('Index-Page-Photos/Product-Design.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -244,7 +244,7 @@ body {
 
 
 .cad-box {
-    background-image: url('Main-Page-Photos/CAD.png');
+    background-image: url('Index-Page-Photos/CAD.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -268,7 +268,7 @@ body {
 }
 
 .prototyping-box {
-    background-image: url('Main-Page-Photos/Prototyping.JPG');
+    background-image: url('Index-Page-Photos/Prototyping.JPG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -292,7 +292,7 @@ body {
 }
 
 .other-box {
-    background-image: url('Main-Page-Photos/Other.jpeg');
+    background-image: url('Index-Page-Photos/Other.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
