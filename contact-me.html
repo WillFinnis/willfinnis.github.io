@@ -1,5 +1,7 @@
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Will Finnis | Electronics Engineer</title>
         <link rel="stylesheet" href="static/Sub-Page-Style.css">
         <link rel="stylesheet" href="static/Contact-Me-Page-Style.css">
@@ -28,5 +30,42 @@
         <footer class="footer-barrier">
             <p class="footer-text">© 2025 Will Finnis</p>
         </footer>
+
+        <!-- JavaScript to remove header on iPhone -->
+        <script>
+            const header = document.querySelector('.header');
+            
+            let lastScrollY = 0;
+            let ticking = false;
+            let isCompact = false;
+            
+            function updateHeader() {
+                const scrollY = window.scrollY;
+                const width = window.innerWidth;
+            
+                if (width <= 700) {
+                    // hysteresis: shrink after 60px, expand only if back above 40px
+                    if (!isCompact && scrollY > 80) {
+                        header.classList.add('header--compact');
+                        isCompact = true;
+                    } else if (isCompact && scrollY < 40) {
+                        header.classList.remove('header--compact');
+                        isCompact = false;
+                    }
+                } else {
+                    header.classList.remove('header--compact');
+                    isCompact = false;
+                }
+            
+                ticking = false;
+            }
+            
+            window.addEventListener('scroll', () => {
+                if (!ticking) {
+                    window.requestAnimationFrame(updateHeader);
+                    ticking = true;
+                }
+            });
+        </script>
     </body>
 </html>
