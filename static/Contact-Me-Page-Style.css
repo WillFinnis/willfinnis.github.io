@@ -39,3 +39,7 @@
 .contact-form button:hover {
     background-color: #333333;
 }
+
+textarea {
+    font-family: "Century Gothic", Avenir, sans-serif;
+}

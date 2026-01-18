@@ -44,8 +44,26 @@
         
             <button type="submit">Send Message</button>
         </form>
-        
 
+        <script>
+            const form = document.querySelector('form');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                }).then(response => {
+                    if (response.ok) {
+                        alert('Thanks! Your message was sent.');
+                        form.reset();
+                    } else {
+                        alert('Oops! There was a problem.');
+                    }
+                });
+            });
+        </script>
+        
         <footer class="footer-barrier">
             <p class="footer-text">© 2026 Will Finnis</p>
         </footer>
