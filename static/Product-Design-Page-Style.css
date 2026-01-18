@@ -1,3 +1,4 @@
+/* ---------- PAGE LINKS ---------- */
 .rover-link,
 .pulse-pro-link,
 .hair-dryer-link,
@@ -49,6 +50,7 @@
     background-image: url('Product-Design/SDCA-Sketching-1.jpg');
 }
 
+/* ---------- SECTION PRESETS ---------- */
 .rover-form-sketches,
 .rover-mechanical-sketches,
 .rover-portability-considerations,
@@ -89,6 +91,7 @@
     height: 0;
 }
 
+/* ---------- IMAGE EDITS ---------- */
 .rover-form-sketches-image,
 .rover-mechanical-sketches-image,
 .rover-portability-considerations-image,
@@ -97,9 +100,12 @@
 .bike-light-sketches-image,
 .speaker-sketches-image,
 .speaker-ar-image {
-    height: 400px;
+    max-height: 400px;
+    max-width: 100%;
     width: auto;
+    height: auto;
     border-radius: 25px;
+    display: block;
 }
 
 .app-image,
@@ -111,13 +117,20 @@
 .bike-light-renders-image,
 .speaker-render-image,
 .form-sketching-image {
-    height: 500px;
+    max-height: 500px;
+    max-width: 100%;
     width: auto;
+    height: auto;
     border-radius: 25px;
+    display: block;
 }
 
+/* ---------- VIDEO EDITS ---------- */
 .hmi-video {
-    height: 500px;
+    max-height: 500px;
+    max-width: 100%;
     width: auto;
+    height: auto;
     border-radius: 25px;
+    display: block;
 }

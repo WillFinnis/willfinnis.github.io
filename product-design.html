@@ -224,7 +224,6 @@
                 const width = window.innerWidth;
             
                 if (width <= 700) {
-                    // hysteresis: shrink after 60px, expand only if back above 40px
                     if (!isCompact && scrollY > 80) {
                         header.classList.add('header--compact');
                         isCompact = true;

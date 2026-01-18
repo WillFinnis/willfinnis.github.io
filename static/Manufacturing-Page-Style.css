@@ -1,3 +1,4 @@
+/* ---------- PAGE LINKS ---------- */
 .printing-link,
 .assembly-link,
 .metal-fabrication-link,
@@ -40,6 +41,7 @@
     background-position: center 60%;
 }
 
+/* ---------- SECTION PRESETS ---------- */
 .printing,
 .metal-lathe,
 .milling-machine,
@@ -67,6 +69,7 @@
     height: 0;
 }
 
+/* ---------- IMAGE EDITS ---------- */
 .printing-image,
 .metal-lathe-image,
 .milling-machine-image,

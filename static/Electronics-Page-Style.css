@@ -1,3 +1,4 @@
+/* ---------- PAGE LINKS ---------- */
 .arduino-link,
 .pcb-design-link,
 .soldering-link,
@@ -38,6 +39,7 @@
     background-position: center 70%;
 }
 
+/* ---------- SECTION PRESETS ---------- */
 .rfid-lcd,
 .canbus,
 .modbus,
@@ -62,6 +64,7 @@
     height: 0;
 }
 
+/* ---------- IMAGE EDITS ---------- */
 .rfid-image,
 .rfid-lcd-image,
 .canbus-image,
@@ -76,17 +79,6 @@
     border-radius: 25px;
 }
 
-.rfid-lcd-video,
-.canbus-multiple-device-video,
-.canbus-master-slave-video,
-.bluetooth-testing-image,
-.bluetooth-video,
-.tank-video {
-    height: 500px;
-    width: auto;
-    border-radius: 25px;
-}
-
 .motor-control-image,
 .altium-image {
     height: 400px;
@@ -96,6 +88,18 @@
 
 .circuit-schematic {
     height: 700px;
+    width: auto;
+    border-radius: 25px;
+}
+
+/* ---------- VIDEO EDITS ---------- */
+.rfid-lcd-video,
+.canbus-multiple-device-video,
+.canbus-master-slave-video,
+.bluetooth-testing-image,
+.bluetooth-video,
+.tank-video {
+    height: 500px;
     width: auto;
     border-radius: 25px;
 }

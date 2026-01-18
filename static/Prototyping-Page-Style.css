@@ -1,3 +1,4 @@
+/* ---------- PAGE LINKS ---------- */
 .concept-testing-link,
 .printing-link,
 .foam-modelling-link {
@@ -32,6 +33,7 @@
     background-position: center 70%;
 }
 
+/* ---------- SECTION PRESETS ---------- */
 .docking-tracker,
 .rover-prototype,
 .rover-portability,
@@ -62,6 +64,7 @@
     margin: 0 auto;
 }
 
+/* ---------- IMAGE EDITS ---------- */
 .docking-tracker-image,
 .rover-prototype-image,
 .rover-performance-image,
@@ -75,6 +78,7 @@
     border-radius: 25px;
 }
 
+/* ---------- VIDEO EDITS ---------- */
 .rover-performance-video {
     height: 500px;
     width: auto;

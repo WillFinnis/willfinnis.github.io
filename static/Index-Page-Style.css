@@ -1,4 +1,4 @@
-/* ---------- RESET ---------- */
+/* ---------- PAGE PRESETS ---------- */
 * {
     box-sizing: border-box;
 }
@@ -141,7 +141,7 @@ body {
     font-size: clamp(22px, 4vw, 48px);
 }
 
-/* Background images */
+/* ---------- BACKGROUND IMAGES ---------- */
 .product-design-box { background: url("Index-Page-Photos/Product-Design.jpg") center/cover; }
 .cad-box { background: url("Index-Page-Photos/CAD.jpg") center/cover; }
 .prototyping-box { background: url("Index-Page-Photos/Prototyping.JPG") center/cover; }
@@ -164,7 +164,7 @@ body {
     margin: 0;
 }
 
-/* ---------- RESPONSIVE ---------- */
+/* ---------- RESPONDS TO DIFFERENT DEVICES ---------- */
 @media (max-width: 1024px) {
     .link-boxes {
         grid-template-columns: repeat(2, 1fr);
@@ -190,8 +190,7 @@ body {
     }
 }
 
-/* ---------- COMPACT HEADER (mobile only, on scroll) ---------- */
-
+/* ---------- HEADER COMPACT (MOBILE ONLY) ---------- */
 @media (max-width: 700px) {
     .header {
         transition: padding 0.3s ease, min-height 0.3s ease;

@@ -1,3 +1,4 @@
+/* ---------- PAGE LINKS ---------- */
 .mechanic-link,
 .cv-link,
 .rallies-link {
@@ -30,6 +31,7 @@
     background-image: url('Other/Transit-Support-Van.JPG');
 }
 
+/* ---------- SECTION PRESETS ---------- */
 .rally-support,
 .rally-games {
     display: flex;
@@ -57,6 +59,7 @@
     height: 0;
 }
 
+/* ---------- IMAGE EDITS ---------- */
 .rally-support-image,
 .rally-games-image,
 .amazon-cars-image,
