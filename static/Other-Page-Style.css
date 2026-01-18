@@ -1,6 +1,6 @@
 .cv-link,
 .rallies-link,
-.labouring-link {
+.mechanic-link {
     align-items: center;
     color: #ffffff;
     text-decoration: none;
@@ -12,7 +12,7 @@
 
 .cv-link:hover,
 .rallies-link:hover,
-.labouring-link:hover {
+.mechanic-link:hover {
     color: #ffffff;
     background-color: #111111;
     padding: 16px 24px;
@@ -23,13 +23,11 @@
 }
 
 .rallies-box {
-    background-image: url('Other/');
-    /* Need better photo */
+    background-image: url('Other/Transit-Support-Van.JPG');
 }
 
-.labouring-box {
-    background-image: url('Other/');
-    /* Need better photo */
+.mechanic-box {
+    background-image: url('Other/2CV-Garage-Front.jpg');
 }
 
 .rally-support,
@@ -41,21 +39,30 @@
     margin: 0 auto;
 }
 
-.amazon-cars {
+.amazon-cars,
+.support-vans,
+.classic-cars,
+.marine {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.amazon-cars .break {
+.amazon-cars .break,
+.support-vans .break,
+.classic-cars .break,
+.marine .break {
     flex-basis: 100%;
     height: 0;
 }
 
 .rally-support-image,
 .rally-games-image,
-.amazon-cars-image {
+.amazon-cars-image,
+.support-vans-image,
+.classic.cars-image,
+.marine-image {
     height: 500px;
     width: auto;
     border-radius: 25px;

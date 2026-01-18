@@ -51,6 +51,11 @@
             <span class="break"></span>
             <video src="static/Electronics/ESP32-RFID-LCD-Testing.MOV" class="rfid-lcd-video" alt="RFID LCD Video Re-Size" controls></video>
         </div>
+        <p>
+            Initial stages of development for a modular autonomous garden care robot circuit. This circuit utilizes RFID scanners to detect when
+            the different modules are inserted to the main body of the robot. The detection and connection of the modules is then displayed on 
+            the LCD.
+        </p>
 
         <h3>CANBUS</h3>
         <div class="canbus">
@@ -65,6 +70,10 @@
             <video src="static/Electronics/Arduino-CANBUS-Multiple-Device-Testing.mp4" class="canbus-multiple-device-video" alt="CANBUS Video Rotate" controls></video>
             <video src="static/Electronics/Arduino-ESP32-CANBUS-Testing.mov" class="canbus-master-slave-video" alt="CANBUS Video Re-Size" controls></video>
         </div>
+        <p>
+            A circuit designed to test the limitations of basic connection and communication between different Arduino Nano's and ESP32 microcontrollers 
+            using the CANBUS connection protocol. This was used to determine the ease of set up and clarity of communication from the devices.
+        </p>
 
         <h3>MODBUS</h3>
         <div class="modbus">
@@ -73,12 +82,20 @@
             <img src="static/Electronics/Arduino-MODBUS-Two-Device-Testing.jpg" class="modbus-image" alt="Image Re-Size">
             <img src="static/Electronics/Arduino-MODBUS-Two-Device-Code.jpg" class="modbus-image" alt="Image Re-Size">
         </div>
+        <p>
+            A circuit designed to test the limitations of basic connection and communication between different Arduino Nano's using the MODBUS 
+            connection protocol. This was used to determine the ease of set up and clarity of communication from the devices.
+        </p>
 
         <h3>Motor Testing</h3>
         <div class="motor-testing">
             <img src="static/Electronics/Arduino-Motor-Control-TinkerCAD.jpg" class="motor-control-image" alt="Image Re-Size">
             <img src="static/Electronics/Arduino-Motor-Control-Testing.jpg" class="motor-control-image" alt="Image Re-Size">
         </div>
+        <p>
+            A small circuit to test a set of Pololu 50:1 37D 12V Metal Gearmotors with the BTS7960 motor controllers, and see whether
+            they were compatible with each other for use on a bluetooth robot project.
+        </p>
 
         <h3>Bluetooth Control</h3>
         <div class="bluetooth-control">
@@ -87,6 +104,11 @@
             <img src="static/Electronics/ESP32-Rover-Electronics-Testing.jpg" class="bluetooth-testing-image" alt="Image Re-Size">
             <video src="static/Electronics/ESP32-Rover-Electronics-Testing.mp4" class="bluetooth-video" alt="Video Re-Size" controls></video>
         </div>
+        <p>
+            The final test circuit built for a bluetooth controlled robot that utilises a PS4 controller that connects via bluetooth to 
+            a ESP32 microcontroller. From this one can use the two joysticks on the PS4 controller to controll the speed and direction 
+            the two motors rotoate, therefore driving the roboteither forwards or backwards, or turning it.
+        </p>
 
         <h2 id="pcb-design" class="scroll-titles">PCB Design</h2>
         <div class="pcb">
@@ -98,6 +120,14 @@
             <img src="static/Electronics/Docking-Tracker-PCB.jpg" class="pcb-image" alt="Image Re-Size">
             <img src="static/Electronics/Docking-Tracker-PCB-In-Situe.JPG" class="pcb-image" alt="Image Re-Size">
         </div>
+        <p>
+            This PCB schematic and layout is for a robotic mower docking tracker, designed and built in Altium,  that I built to assist 
+            with product benchmark testing while working for Bosch in their Lawn & Garden division. Attached to the PCB is an Arduino 
+            Nano that runs the circuit, an Ultrasonic Sensor (USS) that detects when the robot moves into a defined range, a Real Time 
+            Clock (RTC) that notes the exact date and time stamp when the robot either enters or leaves the defined range, a Liquid 
+            Crystal Display (LCD) to portray the latest docking/undocking, and an SD Card reader to save all the data collected onto 
+            an SD card for later analysis with either other robots or local meteorlogical data.
+        </p>
 
         <h2 id="soldering" class="scroll-titles">Soldering</h2>
         <div class="soldering">
@@ -110,6 +140,11 @@
             <img src="static/Electronics/Docking-Tracker-Perf-Board-Soldered.JPG" class="soldering-image" alt="Image Re-Size">
             <img src="static/Electronics/Docking-Tracker-Perf-Board-In-Situe.JPG" class="soldering-image" alt="Image Re-Size">
         </div>
+        <p>
+            Before a PCB was designed for the project above I first created a prototype to test whether the device would work. For this 
+            I soldered all the components onto two layers of Perforated Board, and used a combination of the metal tracks built into the 
+            board and other small wires soldered on to create the working circuit.
+        </p>
 
         <h2 id="bluetooth-control" class="scroll-titles">Bluetooth Controlled Robot</h2>
         <div class="tank">
@@ -118,6 +153,15 @@
             <video src="static/Electronics/Tank-Blowing-Out-Candle.MOV" class="tank-video" alt="Tank Video Re-Size" controls></video>
             <img src="static/Electronics/Tank-PCB.jpg" class="tank-image" alt="Image Re-Size">
         </div>
+        <p>
+            One project at University was to design and build a small bluetooth controlled robot that could you could navigate around a complex
+            course that involved: A bridge with a tunnel underneath the robot had to fit through, a sea saw the robot had to drive over, and an 
+            uneven road the robot had to scale. Around the course there were also a series of tea lights placed at different heights the robot 
+            needed to extinguish. This robot utilised the rocker boogie suspension, similar to the suspension used by the Mars rover, along with 
+            tank treads for grip and support. Then for the extingsuishing system the rorobt has an extendable arm, and a tube that carried air 
+            from a small PC fan. The arm allowed the robot to reach different heights with ease, as well as reach over any wall or obstacle in 
+            the way of the tea light.
+        </p>
 
         <footer class="footer-barrier">
             <p class="footer-text">© 2025 Will Finnis</p>
