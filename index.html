@@ -1,5 +1,7 @@
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Will Finnis | Electronics Engineer</title>
         <link rel="stylesheet" href="static/Index-Page-Style.css">
     </head>
@@ -23,41 +25,72 @@
             <a href="contact-me.html" class="contact-link">Contact Me</a>
         </header>
         
-        <div class="photo-collage">
-            <img src="static/Index-Page-Photos/Main-Page-Collage.jpg" alt="Main-Page-Collage" class="collage-img">
-            <div class="image-overlay"></div>
-            <div class="image-text"><span class="about-me-title">About Me</span> <br> <span class="about-me-text">I'm a 
-                creative, technically driven Electronics Engineer with hands-on experience in mechanical, electronic, 
-                and software integration. With a 2:1 in Product Design & Technology from Loughborough University, I've 
-                built strong design, prototyping, and problem-solving skills through projects ranging from Bosch robotic 
-                lawn mowers to classic car restorations and marine engineering. I'm proficient in PCB design, C++, 3D CAD, 
-                and product testing, and enjoy collaborating in multidisciplinary teams. I'm passionate about developing 
-                innovative, well-crafted products that blend technical precision with practical design.</span></div>
-        </div>
+        <section class="hero">
+            <img src="static/Index-Page-Photos/Main-Page-Collage.jpg" alt="Main collage">
+            <div class="hero-overlay"></div>
         
-        <div class="link-boxes">
-            <a href="product-design.html" class="link-box product-design-box">
-                <span class="box-title">Product Design</span>
-            </a>
-            <a href="cad.html" class="link-box cad-box">
-                <span class="box-title">CAD</span>
-            </a>
-            <a href="prototyping.html" class="link-box prototyping-box">
-                <span class="box-title">Prototyping</span>
-            </a>
-            <a href="electronics.html" class="link-box electronics-box">
-                <span class="box-title">Electronics</span>
-            </a>
-            <a href="manufacturing.html" class="link-box manufacturing-box">
-                <span class="box-title">Manufacturing</span>
-            </a>
-            <a href="other.html" class="link-box other-box">
-                <span class="box-title">Other</span>
-            </a>
-        </div>
+            <div class="hero-content">
+                <h2>About Me</h2>
+                <p>
+                    I'm a creative, technically driven Electronics Engineer with hands-on experience in mechanical, 
+                    electronic, and software integration. With a 2:1 in Product Design & Technology from Loughborough 
+                    University, I've built strong design, prototyping, and problem-solving skills through projects 
+                    ranging from Bosch robotic lawn mowers to classic car restorations and marine engineering. I'm 
+                    proficient in PCB design, C++, 3D CAD, and product testing, and enjoy collaborating in 
+                    multidisciplinary teams. I'm passionate about developing innovative, well-crafted products that 
+                    blend technical precision with practical design.
+                </p>
+            </div>
+        </section>
+        
+        <section class="link-boxes">
+            <a href="product-design.html" class="link-box product-design-box"><span>Product Design</span></a>
+            <a href="cad.html" class="link-box cad-box"><span>CAD</span></a>
+            <a href="prototyping.html" class="link-box prototyping-box"><span>Prototyping</span></a>
+            <a href="electronics.html" class="link-box electronics-box"><span>Electronics</span></a>
+            <a href="manufacturing.html" class="link-box manufacturing-box"><span>Manufacturing</span></a>
+            <a href="other.html" class="link-box other-box"><span>Other</span></a>
+        </section>
         
         <footer class="footer-barrier">
-            <p class="footer-text">© 2025 Will Finnis</p>
+            <p class="footer-text">© 2026 Will Finnis</p>
         </footer>
+
+        <!-- JavaScript to remove header on iPhone -->
+        <script>
+            const header = document.querySelector('.header');
+            
+            let lastScrollY = 0;
+            let ticking = false;
+            let isCompact = false;
+            
+            function updateHeader() {
+                const scrollY = window.scrollY;
+                const width = window.innerWidth;
+            
+                if (width <= 700) {
+                    // hysteresis: shrink after 60px, expand only if back above 40px
+                    if (!isCompact && scrollY > 80) {
+                        header.classList.add('header--compact');
+                        isCompact = true;
+                    } else if (isCompact && scrollY < 40) {
+                        header.classList.remove('header--compact');
+                        isCompact = false;
+                    }
+                } else {
+                    header.classList.remove('header--compact');
+                    isCompact = false;
+                }
+            
+                ticking = false;
+            }
+            
+            window.addEventListener('scroll', () => {
+                if (!ticking) {
+                    window.requestAnimationFrame(updateHeader);
+                    ticking = true;
+                }
+            });
+        </script>            
     </body>
 </html>

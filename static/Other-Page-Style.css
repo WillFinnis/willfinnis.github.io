@@ -1,6 +1,6 @@
+.mechanic-link,
 .cv-link,
-.rallies-link,
-.mechanic-link {
+.rallies-link {
     align-items: center;
     color: #ffffff;
     text-decoration: none;
@@ -10,12 +10,16 @@
     transition: all 0.3s;
 }
 
+.mechanic-link:hover,
 .cv-link:hover,
-.rallies-link:hover,
-.mechanic-link:hover {
+.rallies-link:hover {
     color: #ffffff;
     background-color: #111111;
     padding: 16px 24px;
+}
+
+.mechanic-box {
+    background-image: url('Other/2CV-Garage-Front.jpg');
 }
 
 .cv-box {
@@ -24,10 +28,6 @@
 
 .rallies-box {
     background-image: url('Other/Transit-Support-Van.JPG');
-}
-
-.mechanic-box {
-    background-image: url('Other/2CV-Garage-Front.jpg');
 }
 
 .rally-support,
