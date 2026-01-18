@@ -26,6 +26,25 @@
         </header>
         
         <h1 class="page-title">Contact Me</h1>
+        <form class="contact-form" method="POST" action="/contact">
+            <label>
+                Name
+                <input type="text" name="name" required>
+            </label>
+        
+            <label>
+                Email
+                <input type="email" name="email" required>
+            </label>
+        
+            <label>
+                Message
+                <textarea name="message" rows="6" required></textarea>
+            </label>
+        
+            <button type="submit">Send Message</button>
+        </form>
+        
 
         <footer class="footer-barrier">
             <p class="footer-text">© 2026 Will Finnis</p>
