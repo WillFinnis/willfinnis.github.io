@@ -35,21 +35,25 @@
 
 /* ---------- SECTION PRESETS ---------- */
 .docking-tracker,
-.rover-prototype,
 .rover-portability,
-.rover-performance,
 .grip {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.rover-prototype,
+.rover-performance {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.docking-tracker .break,
 .rover-prototype .break,
-.rover-portability .break,
-.rover-performance .break,
-.grip .break {
+.rover-performance .break {
     flex-basis: 100%;
     height: 0;
 }

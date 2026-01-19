@@ -40,11 +40,18 @@
 }
 
 /* ---------- SECTION PRESETS ---------- */
+.modbus,
+.bluetooth-control {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+}
+
 .rfid-lcd,
 .canbus,
-.modbus,
 .motor-testing,
-.bluetooth-control,
 .pcb,
 .soldering,
 .tank {
@@ -56,8 +63,6 @@
 
 .rfid-lcd .break,
 .canbus .break,
-.modbus .break,
-.bluetooth-control .break,
 .pcb .break,
 .soldering .break {
     flex-basis: 100%;

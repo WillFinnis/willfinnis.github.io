@@ -50,10 +50,12 @@
     background-position: center 70%;
 }
 
+/* ---------- SECTION PRESETS ---------- */
 .rover-injection-mould-design,
 .internal-mechanics,
 .exploded-views,
 .rover-mechanical-latches,
+.mould-tool-engineer-drawings,
 .trebuchet-firing {
     display: flex;
     justify-content: center;
@@ -62,11 +64,9 @@
     margin: 0 auto;
 }
 
-/* ---------- SECTION PRESETS ---------- */
 .cnc-tool-paths,
 .injection-mould-simulations,
 .fea-simulations,
-.mould-tool-engineer-drawings,
 .renders,
 .surface-modelling {
     display: flex;
@@ -78,7 +78,6 @@
 .cnc-tool-paths .break,
 .injection-mould-simulations .break,
 .fea-simulations .break,
-.mould-tool-engineer-drawings .break,
 .renders .break,
 .surface-modelling .break {
     flex-basis: 100%;

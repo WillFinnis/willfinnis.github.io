@@ -13,6 +13,7 @@
                 <p class="title-text">Electronics Engineer</p>
             </a>
 
+            <!-- PAGE LINKS -->
             <nav class="nav-links">
                 <a href="product-design.html" class="nav-link">Product Design</a>
                 <a href="cad.html" class="nav-link">CAD</a>
@@ -25,6 +26,7 @@
             <a href="contact-me.html" class="contact-link">Contact Me</a>
         </header>
         
+        <!-- HEADING LINKS -->
         <h1 class="page-title">Electronics</h1>
         <nav class="page-links">
         <a href="#arduino" class="arduino-link box arduino-box">
@@ -41,6 +43,7 @@
         </a>
         </nav>
 
+        <!-- ARDUINO -->
         <h2 id="arduino" class="scroll-titles">Arduino</h2>
         <h3>Sensor Testing</h3>
         <div class="rfid-lcd">
@@ -50,14 +53,15 @@
             <img src="static/Electronics/ESP32-RFID-LCD-TinkerCAD.jpg" class="rfid-lcd-image" alt="Image Re-Size">
             <img src="static/Electronics/ESP32-RFID-LCD-Testing.jpg" class="rfid-lcd-image" alt="Image Re-Size">
             <img src="static/Electronics/ESP32-RFID-LCD-Code.jpg" class="rfid-lcd-image" alt="Image Re-Size">
-            <span class="break"></span>
-            <video src="static/Electronics/ESP32-RFID-LCD-Testing.MOV" class="rfid-lcd-video" alt="RFID LCD Video Re-Size" controls></video>
         </div>
         <p>
             Initial stages of development for a modular autonomous garden care robot circuit. This circuit utilizes RFID scanners to detect when
             the different modules are inserted to the main body of the robot. The detection and connection of the modules is then displayed on 
             the LCD.
         </p>
+        <div class="rfid-lcd">
+            <video src="static/Electronics/ESP32-RFID-LCD-Testing.MOV" class="rfid-lcd-video" alt="RFID LCD Video Re-Size" controls></video>
+        </div>
 
         <h3>CANBUS</h3>
         <div class="canbus">
@@ -65,29 +69,31 @@
             <span class="break"></span>
             <img src="static/Electronics/Arduino-CANBUS-Two-Device-Testing.jpg" class="canbus-image" alt="Image Re-Size">
             <img src="static/Electronics/Arduino-CANBUS-Two-Device-Code.jpg" class="canbus-image" alt="Image Re-Size">
-            <span class="break"></span>
+        </div>
+        <p>
+            A circuit designed to test the limitations of basic connection and communication between different Arduino Nano's and ESP32 microcontrollers 
+            using the CANBUS connection protocol. This was used to determine the ease of set up and clarity of communication from the devices.
+        </p>
+        <div class="canbus">
             <img src="static/Electronics/Arduino-CANBUS-Multiple-Device-Transmission-Master-Code.jpg" class="canbus-image" alt="Image Re-Size">
             <img src="static/Electronics/Arduino-CANBUS-Multiple-Slaves-Master-Code.jpg" class="canbus-image" alt="Image Re-Size">
             <span class="break"></span>
             <video src="static/Electronics/Arduino-CANBUS-Multiple-Device-Testing.mp4" class="canbus-multiple-device-video" alt="CANBUS Video Rotate" controls></video>
             <video src="static/Electronics/Arduino-ESP32-CANBUS-Testing.mov" class="canbus-master-slave-video" alt="CANBUS Video Re-Size" controls></video>
         </div>
-        <p>
-            A circuit designed to test the limitations of basic connection and communication between different Arduino Nano's and ESP32 microcontrollers 
-            using the CANBUS connection protocol. This was used to determine the ease of set up and clarity of communication from the devices.
-        </p>
 
         <h3>MODBUS</h3>
         <div class="modbus">
             <img src="static/Electronics/Arduino-MODBUS-TinkerCAD.jpg" class="modbus-image" alt="Image Re-Size">
-            <span class="break"></span>
-            <img src="static/Electronics/Arduino-MODBUS-Two-Device-Testing.jpg" class="modbus-image" alt="Image Re-Size">
-            <img src="static/Electronics/Arduino-MODBUS-Two-Device-Code.jpg" class="modbus-image" alt="Image Re-Size">
         </div>
         <p>
             A circuit designed to test the limitations of basic connection and communication between different Arduino Nano's using the MODBUS 
             connection protocol. This was used to determine the ease of set up and clarity of communication from the devices.
         </p>
+        <div class="modbus">
+            <img src="static/Electronics/Arduino-MODBUS-Two-Device-Testing.jpg" class="modbus-image" alt="Image Re-Size">
+            <img src="static/Electronics/Arduino-MODBUS-Two-Device-Code.jpg" class="modbus-image" alt="Image Re-Size">
+        </div>
 
         <h3>Motor Testing</h3>
         <div class="motor-testing">
@@ -99,28 +105,10 @@
             they were compatible with each other for use on a bluetooth robot project.
         </p>
 
-        <h3>Bluetooth Control</h3>
-        <div class="bluetooth-control">
-            <img src="static/Electronics/ESP32-Rover-Electronics-Code.jpg" class="bluetooth-image" alt="Image Re-Size">
-            <span class="break"></span>
-            <img src="static/Electronics/ESP32-Rover-Electronics-Testing.jpg" class="bluetooth-testing-image" alt="Image Re-Size">
-            <video src="static/Electronics/ESP32-Rover-Electronics-Testing.mp4" class="bluetooth-video" alt="Video Re-Size" controls></video>
-        </div>
-        <p>
-            The final test circuit built for a bluetooth controlled robot that utilises a PS4 controller that connects via bluetooth to 
-            a ESP32 microcontroller. From this one can use the two joysticks on the PS4 controller to controll the speed and direction 
-            the two motors rotoate, therefore driving the roboteither forwards or backwards, or turning it.
-        </p>
-
+        <!-- PCB DESIGN -->
         <h2 id="pcb-design" class="scroll-titles">PCB Design</h2>
         <div class="pcb">
             <img src="static/Electronics/Docking-Tracker-Altium-Circuit-Diagram.jpg" class="circuit-schematic-image" alt="Image Re-Size">
-            <span class="break"></span>
-            <img src="static/Electronics/Docking-Tracker-Altium-PCB-Tracks.jpg" class="altium-image" alt="Image Re-Size">
-            <img src="static/Electronics/Docking-Tracker-Altium-PCB.jpg" class="altium-image" alt="Image Re-Size">
-            <span class="break"></span>
-            <img src="static/Electronics/Docking-Tracker-PCB.jpg" class="pcb-image" alt="Image Re-Size">
-            <img src="static/Electronics/Docking-Tracker-PCB-In-Situe.JPG" class="pcb-image" alt="Image Re-Size">
         </div>
         <p>
             This PCB schematic and layout is for a robotic mower docking tracker, designed and built in Altium,  that I built to assist 
@@ -130,11 +118,25 @@
             Crystal Display (LCD) to portray the latest docking/undocking, and an SD Card reader to save all the data collected onto 
             an SD card for later analysis with either other robots or local meteorlogical data.
         </p>
+        <div class="pcb">
+            <img src="static/Electronics/Docking-Tracker-Altium-PCB-Tracks.jpg" class="altium-image" alt="Image Re-Size">
+            <img src="static/Electronics/Docking-Tracker-Altium-PCB.jpg" class="altium-image" alt="Image Re-Size">
+            <span class="break"></span>
+            <img src="static/Electronics/Docking-Tracker-PCB.jpg" class="pcb-image" alt="Image Re-Size">
+            <img src="static/Electronics/Docking-Tracker-PCB-In-Situe.JPG" class="pcb-image" alt="Image Re-Size">
+        </div>
 
+        <!-- SOLDERING -->
         <h2 id="soldering" class="scroll-titles">Soldering</h2>
         <div class="soldering">
             <img src="static/Electronics/Docking-Tracker-Perf-Board-Plan.jpg" class="soldering-image" alt="Image Re-Size">
-            <span class="break"></span>
+        </div>
+        <p>
+            Before a PCB was designed for the project above I first created a prototype to test whether the device would work. For this 
+            I soldered all the components onto two layers of Perforated Board, and used a combination of the metal tracks built into the 
+            board and other small wires soldered on to create the working circuit.
+        </p>
+        <div class="soldering">
             <img src="static/Electronics/Docking-Tracker-Perf-Board-Bottom-Soldered.JPG" class="soldering-image" alt="Image Re-Size">
             <img src="static/Electronics/Docking-Tracker-Perf-Board-Top.JPG" class="soldering-image" alt="Image Re-Size">
             <img src="static/Electronics/Docking-Tracker-Perf-Board-Top-Soldered.JPG" class="soldering-image" alt="Image Re-Size">
@@ -142,13 +144,24 @@
             <img src="static/Electronics/Docking-Tracker-Perf-Board-Soldered.JPG" class="soldering-image" alt="Image Re-Size">
             <img src="static/Electronics/Docking-Tracker-Perf-Board-In-Situe.JPG" class="soldering-image" alt="Image Re-Size">
         </div>
-        <p>
-            Before a PCB was designed for the project above I first created a prototype to test whether the device would work. For this 
-            I soldered all the components onto two layers of Perforated Board, and used a combination of the metal tracks built into the 
-            board and other small wires soldered on to create the working circuit.
-        </p>
 
-        <h2 id="bluetooth-control" class="scroll-titles">Bluetooth Controlled Robot</h2>
+        <!-- BLUETOOTH CONTROL -->
+        <h2 id="bluetooth-control" class="scroll-titles">Bluetooth Controlled</h2>
+        <h3>Circuit Testing</h3>
+        <div class="bluetooth-control">
+            <img src="static/Electronics/ESP32-Rover-Electronics-Code.jpg" class="bluetooth-image" alt="Image Re-Size">
+        </div>
+        <p>
+            The final test circuit built for a bluetooth controlled robot that utilises a PS4 controller that connects via bluetooth to 
+            a ESP32 microcontroller. From this one can use the two joysticks on the PS4 controller to controll the speed and direction 
+            the two motors rotoate, therefore driving the roboteither forwards or backwards, or turning it.
+        </p>
+        <div class="bluetooth-control">
+            <img src="static/Electronics/ESP32-Rover-Electronics-Testing.jpg" class="bluetooth-testing-image" alt="Image Re-Size">
+            <video src="static/Electronics/ESP32-Rover-Electronics-Testing.mp4" class="bluetooth-video" alt="Video Re-Size" controls></video>
+        </div>
+
+        <h3>Bluetooth Obstacle Course Robot</h3>
         <div class="tank">
             <video src="static/Electronics/Tank-Moving.MOV" class="tank-video" alt="Tank Video Re-Size" controls></video>
             <video src="static/Electronics/Tank-Bridge-Decent.MOV" class="tank-video" alt="Tank Video Re-Size" controls></video>
@@ -169,7 +182,7 @@
             <p class="footer-text">© 2026 Will Finnis</p>
         </footer>
 
-        <!-- JavaScript to remove header on iPhone -->
+        <!-- JAVASCIPT TO REMOVE HEADER ON MOBILE -->
         <script>
             const header = document.querySelector('.header');
             

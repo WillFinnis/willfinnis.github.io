@@ -54,6 +54,7 @@
 .rover-form-sketches,
 .rover-mechanical-sketches,
 .rover-portability-considerations,
+.hmi,
 .bp-sketches,
 .bp-digital-sketches,
 .bike-light-sketches,
@@ -68,7 +69,6 @@
 }
 
 .app,
-.hmi,
 .story-board,
 .rover-renders,
 .bp-renders,
@@ -81,7 +81,6 @@
 }
 
 .app .break,
-.hmi .break,
 .story-board .break,
 .rover-renders .break,
 .bp-renders .break,

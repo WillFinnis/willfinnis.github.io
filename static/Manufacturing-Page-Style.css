@@ -45,28 +45,15 @@
 .printing,
 .metal-lathe,
 .milling-machine,
+.cnc-milling,
+.welding,
+.trebuchet,
 .wood-working {
     display: flex;
     justify-content: center;
     gap: 20px;
     align-items: center;
     margin: 0 auto;
-}
-
-.cnc-milling,
-.welding,
-.trebuchet {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.cnc-milling .break,
-.welding .break,
-.trebuchet .break {
-    flex-basis: 100%;
-    height: 0;
 }
 
 /* ---------- IMAGE EDITS ---------- */

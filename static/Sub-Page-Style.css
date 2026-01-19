@@ -44,6 +44,13 @@ body {
 .name-section {
     text-decoration: none;
     color: inherit;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.name-section:hover {
+    background-color:#2c2c2c;
 }
 
 .nav-links {
@@ -58,7 +65,11 @@ body {
     text-decoration: none;
     padding: 8px 14px;
     border-radius: 20px;
-    transition: all 0.3s;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #2c2c2c;
 }
 
 .current {
@@ -72,6 +83,11 @@ body {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
+    white-space: nowrap;
+}
+
+.contact-link:hover {
+    background-color: #5d5d5d;
 }
 
 /* ---------- PAGE ---------- */
@@ -83,10 +99,15 @@ body {
 
 .page-links {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 0 24px;
     margin-bottom: 60px;
+}
+
+.scroll-titles {
+    scroll-margin-top: 120px;
 }
 
 /* ---------- BOX LINKS ---------- */
@@ -124,8 +145,8 @@ h2, h3 {
 }
 
 p {
-    max-width: 900px;
-    margin: 20px auto 0;
+    max-width: 1300px;
+    margin: 20px auto 20px;
     text-align: center;
     font-size: 17px;
     line-height: 1.6;
@@ -134,8 +155,8 @@ p {
 /* ---------- MEDIA ---------- */
 img,
 video {
-    max-width: 100%;
-    height: auto;
+    max-height: 100%;
+    width: auto;
     display: block;
 }
 
@@ -153,10 +174,6 @@ video {
     .page-links {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .image-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 @media (max-width: 768px) {
@@ -169,19 +186,15 @@ video {
         grid-template-columns: 1fr;
     }
 
-    .image-grid {
-        grid-template-columns: 1fr;
-        max-width: calc(100% - 32px);
-        margin: 0 auto;
-    }
-
     img {
-        max-width: calc(100% - 32px);
+        max-height: calc(100% - 32px);
+        width: auto;
         margin: 0 auto;
     }
 
     video {
-        max-width: calc(100% - 32px);
+        max-height: calc(100% - 32px);
+        width: auto;
         margin: 0 auto;
     }
 
@@ -190,6 +203,10 @@ video {
 
 /* ---------- HEADER COMPACT (MOBILE ONLY) ---------- */
 @media (max-width: 700px) {
+    .header {
+        transition: padding 0.3s ease, min-height 0.3s ease;
+    }
+
     .header--compact {
         padding: 8px 16px;
     }
