@@ -213,7 +213,7 @@ body {
 }
 
 /* ---------- HEADER COMPACT (MOBILE ONLY) ---------- */
-@media (max-width: 700px) {
+@media (max-width: 870px) {
     .header {
         transition: padding 0.3s ease, min-height 0.3s ease;
     }
