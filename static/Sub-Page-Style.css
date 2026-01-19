@@ -128,7 +128,13 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.box:hover::before {
+    background-color: rgba(44, 44, 44, 0.7);
 }
 
 .box-title {
